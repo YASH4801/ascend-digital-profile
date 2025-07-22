@@ -23,13 +23,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Example: Deploy to a server via rsync/ssh
-      - name: Deploy to Server
-        run: |
-          rsync -avz dist/ user@your-server:/path/to/your/site
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.9.1
         with:
@@ -52,4 +45,10 @@ jobs:
           # cache: # optional
           # Used to specify the path to a dependency file: package-lock.json, yarn.lock, etc. Supports wildcards or a list of file names for caching multiple dependencies.
           # cache-dependency-path: # optional
+            # Example: Deploy to a server via rsync/ssh
+      # - name: Deploy to Server
+      #   run: |
+      #     rsync -avz dist/ user@your-server:/path/to/your/site
+      #   env:
+      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
                   
