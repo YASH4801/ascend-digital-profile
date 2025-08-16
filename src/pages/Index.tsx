@@ -80,26 +80,26 @@ const Index = () => {
             <div className="relative mb-8">
               <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-primary to-accent p-1 animate-glow-pulse">
                 <div className="w-full h-full rounded-full bg-background flex items-center justify-center text-6xl">
-                  👨‍💻
+                  <img src="/resources/ProfilePicV1.png" alt="Profile Picture" className="rounded-full w-full h-full object-cover" />
                 </div>
               </div>
             </div>
-            
+
             <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-              Hi, I'm <span className="gradient-text">John Doe</span>
+              Hi, I'm <span className="gradient-text">Yash Narang</span>
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-slide-up">
-              Full Stack Developer & Software Engineer
+              Java Developer & Software Engineer
             </p>
-            
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-slide-up" style={{animationDelay: "0.2s"}}>
-              Passionate about creating innovative solutions with modern technologies. 
-              Experienced in React, Node.js, Java Spring, and cloud architectures. 
+
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed animate-slide-up" style={{ animationDelay: "0.2s" }}>
+              Passionate about creating innovative solutions with modern technologies.
+              Experienced in Java, Javascript, Spring Boot, Spring, and cloud architectures.
               Always eager to tackle new challenges and deliver exceptional user experiences.
             </p>
 
-            <div className="flex justify-center gap-4 mb-12 animate-slide-up" style={{animationDelay: "0.4s"}}>
+            <div className="flex justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: "0.4s" }}>
               <Button onClick={handleResumeDownload} className="gap-2 glow-primary">
                 <Download className="h-4 w-4" />
                 Download Resume
@@ -113,7 +113,7 @@ const Index = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex justify-center gap-6 animate-slide-up" style={{animationDelay: "0.6s"}}>
+            <div className="flex justify-center gap-6 animate-slide-up" style={{ animationDelay: "0.6s" }}>
               <Button variant="ghost" size="sm" className="gap-2">
                 <Github className="h-5 w-5" />
                 GitHub
@@ -144,7 +144,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {sections.map((section, index) => (
               <Link key={section.title} to={section.path}>
-                <Card className="section-card h-full animate-fade-in" style={{animationDelay: `${index * 0.1}s`}}>
+                <Card className="section-card h-full animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardHeader>
                     <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${section.color} flex items-center justify-center mb-4`}>
                       <section.icon className="h-6 w-6 text-white" />
@@ -169,15 +169,15 @@ const Index = () => {
               <div className="text-3xl font-bold gradient-text mb-2">5+</div>
               <div className="text-muted-foreground">Years Experience</div>
             </div>
-            <div className="animate-fade-in" style={{animationDelay: "0.1s"}}>
+            <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <div className="text-3xl font-bold gradient-text mb-2">50+</div>
               <div className="text-muted-foreground">Projects Completed</div>
             </div>
-            <div className="animate-fade-in" style={{animationDelay: "0.2s"}}>
+            <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <div className="text-3xl font-bold gradient-text mb-2">15+</div>
               <div className="text-muted-foreground">Technologies</div>
             </div>
-            <div className="animate-fade-in" style={{animationDelay: "0.3s"}}>
+            <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <div className="text-3xl font-bold gradient-text mb-2">98%</div>
               <div className="text-muted-foreground">Client Satisfaction</div>
             </div>
