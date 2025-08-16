@@ -1,7 +1,9 @@
-import { Download, Briefcase, Trophy, GraduationCap, Code, FolderOpen, Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Download, Briefcase, Trophy, GraduationCap, Code, FolderOpen, Mail, Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import resumeConfig from "@/Configs/resumeConfig";
+import { socialRedirects } from "@/Configs/config files/socialRedirects";
 
 const sections = [
   {
@@ -52,9 +54,41 @@ const Index = () => {
   const handleResumeDownload = () => {
     // This would normally download a real PDF file
     console.log("Downloading resume...");
-    // For demo purposes, we'll just show an alert
-    alert("Resume download would start here. Please add your actual resume file to the public folder.");
+    const RESUME_PATH = resumeConfig.path;
+    const link = document.createElement("a");
+    link.href = RESUME_PATH;
+    link.download = "Yash_Narang_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
+
+  interface SocialButton extends HTMLButtonElement {
+    classList: DOMTokenList;
+  }
+
+  const btnRedirectToLink = (btn: SocialButton): void => {
+    let url = "";
+    switch (true) {
+      case btn.classList.contains("Github"):
+        url = socialRedirects.GitHub.pathURL;
+        break;
+      case btn.classList.contains("LinkedIn"):
+        url = socialRedirects.LinkedIn.pathURL;
+        break;
+      case btn.classList.contains("Twitter"):
+        url = socialRedirects.Twitter.pathURL;
+        break;
+      case btn.classList.contains("Instagram"):
+        url = socialRedirects.Instagram.pathURL;
+        break;
+      default:
+        return;
+    }
+    if (url) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -114,17 +148,41 @@ const Index = () => {
 
             {/* Social Links */}
             <div className="flex justify-center gap-6 animate-slide-up" style={{ animationDelay: "0.6s" }}>
-              <Button variant="ghost" size="sm" className="gap-2">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="gap-2 Github"
+                onClick={e => btnRedirectToLink(e.currentTarget as HTMLButtonElement)}
+              >
                 <Github className="h-5 w-5" />
                 GitHub
               </Button>
-              <Button variant="ghost" size="sm" className="gap-2">
+                <Button 
+                variant="ghost" 
+                size="sm" 
+                className="gap-2 LinkedIn"
+                onClick={e => btnRedirectToLink(e.currentTarget as HTMLButtonElement)}
+                >
                 <Linkedin className="h-5 w-5" />
                 LinkedIn
-              </Button>
-              <Button variant="ghost" size="sm" className="gap-2">
+                </Button>
+              <Button 
+              variant="ghost" 
+              size="sm" 
+              className="gap-2 Twitter"
+              onClick={e => btnRedirectToLink(e.currentTarget as HTMLButtonElement)}
+              >
                 <Twitter className="h-5 w-5" />
                 Twitter
+              </Button>
+              <Button
+              variant="ghost"
+              size="sm"
+              className="gap-2 Instagram"
+              onClick={e => btnRedirectToLink(e.currentTarget as HTMLButtonElement)}
+              >
+                <Instagram className="h-5 w-5 " />
+                Instagram
               </Button>
             </div>
           </div>
@@ -189,7 +247,7 @@ const Index = () => {
       <footer className="py-8 px-4 border-t border-border">
         <div className="container mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2024 John Doe. Built with React & TypeScript.
+            © 2025 Yash narang. Built with React & TypeScript.
           </p>
         </div>
       </footer>
