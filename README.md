@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# Yash Narang – Portfolio
 
-## Project info
+Welcome to my personal portfolio! This project showcases my professional journey, achievements, skills, and projects as a Java Developer & Software Engineer. Built with modern web technologies, it provides an interactive and visually appealing way to explore my background and get in touch.
 
-**URL**: https://lovable.dev/projects/389f38bb-3e09-4981-b3e9-e12bde03a35f
+## 🚀 Features
 
-## How can I edit this code?
+- **Hero Section:** Quick introduction with profile picture and bio.
+- **Resume Download:** Download my latest resume directly.
+- **Social Links:** Connect with me on GitHub, LinkedIn, and Twitter.
+- **Portfolio Sections:**  
+  - Work Experience  
+  - Achievements  
+  - Education  
+  - Skills  
+  - Projects  
+  - Contact
+- **Quick Stats:** Highlights of my experience and accomplishments.
+- **Responsive Design:** Looks great on all devices.
+- **Modern UI:** Built with shadcn-ui and Tailwind CSS for a clean, modern look.
 
-There are several ways of editing your application.
+## 🛠️ ProjectTech Stack
 
-**Use Lovable**
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn-ui](https://ui.shadcn.com/)
+- [Lucide Icons](https://lucide.dev/)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/389f38bb-3e09-4981-b3e9-e12bde03a35f) and start prompting.
+## 📂 Project Structure
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+├── public/
+│   └── resources/
+│       └── ProfilePicV1.png
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── lib/
+│   ├── pages/
+│   │   └── Index.tsx
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── tailwind.config.ts
+├── package.json
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
+## 🖥️ Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/YASH4801/ascend-digital-profile.git
+   cd ascend-digital-profile
+   ```
 
-**Use GitHub Codespaces**
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+3. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
 
-## What technologies are used for this project?
+4. **Open in your browser:**  
+   Visit [http://localhost:5173](http://localhost:5173) (or as indicated in your terminal).
 
-This project is built with:
+## 🌐 Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+You can check deployed instance of this project using [personal-profile-yash-narang](https://personal-profile-yash-narang.netlify.app/).
 
-## How can I deploy this project?
+## 📬 Contact
 
-Simply open [Lovable](https://lovable.dev/projects/389f38bb-3e09-4981-b3e9-e12bde03a35f) and click on Share -> Publish.
+Want to connect or have an opportunity?  
+[Get in touch](mailto:yashnarang995@gmail.com) or use the Contact section in the app!
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+© 2024 Yash Narang. Built with ❤️ using React &
