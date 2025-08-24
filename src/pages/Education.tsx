@@ -10,35 +10,35 @@ interface Education {
   startYear: string;
   endYear: string;
   aggregate: string;
-  type: "degree" | "certification";
+  type: "degree" | "certification" | "diploma";
 }
 
 const educationData: Education[] = [
   {
     id: "1",
-    institution: "University of Technology",
-    degree: "Bachelor of Computer Science",
-    startYear: "2016",
-    endYear: "2020",
-    aggregate: "8.5/10 CGPA",
+    institution: "Jabalpur Engineering College",
+    degree: "Bachelor of Technology in Information Technology",
+    startYear: "2019",
+    endYear: "2022",
+    aggregate: "8.05/10 CGPA",
     type: "degree"
   },
   {
     id: "2",
-    institution: "AWS Certified",
-    degree: "Solutions Architect Associate",
-    startYear: "2021",
-    endYear: "2024",
-    aggregate: "Certified",
-    type: "certification"
+    institution: "Govt. Polytechnic College Balaghat",
+    degree: "Diploma in Computer Science",
+    startYear: "2016",
+    endYear: "2019",
+    aggregate: "7.81/10 CGPA",
+    type: "diploma"
   },
   {
     id: "3",
-    institution: "Google",
-    degree: "Professional Cloud Architect",
-    startYear: "2022",
-    endYear: "2025",
-    aggregate: "Certified",
+    institution: "Model School Birsa",
+    degree: "SSC 10th Class",
+    startYear: "2015",
+    endYear: "2016",
+    aggregate: "82%",
     type: "certification"
   }
 ];

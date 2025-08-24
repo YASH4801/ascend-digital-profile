@@ -7,8 +7,14 @@ import { Label } from "@/components/ui/label";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+
+  const SERVICE_ID = "service_z9ttzrl";
+  const TEMPLATE_ID = "template_h78yghh";
+  const PUBLIC_KEY = "SiUBfNzoQYPktViaB";
+
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -18,19 +24,40 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
+    try {
+    await emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      {
+        from_name: formData.name,
+        company: formData.company,
+        from_email: formData.email,
+        message: formData.message,
+      },
+      PUBLIC_KEY
+    );
+
     toast({
-      title: "Message Sent!",
+      title: "Message Sent through Email js.!",
       description: "Thank you for your message. I'll get back to you soon.",
     });
 
     setFormData({ name: "", company: "", email: "", message: "" });
+    } catch (error) {
+    toast({
+      title: "Error",
+      description: "Failed to send message. Please try again later.",
+      variant: "destructive",
+    });
+  }
     setIsSubmitting(false);
   };
 
@@ -160,8 +187,8 @@ const Contact = () => {
           <div className="mt-8 text-center">
             <p className="text-muted-foreground">
               Or reach out directly at{" "}
-              <a href="mailto:your.email@example.com" className="text-primary hover:underline">
-                your.email@example.com
+              <a href="mailto:yashnarang100@gmail.com" className="text-primary hover:underline">
+                yashnarang100@gmail.com
               </a>
             </p>
           </div>
