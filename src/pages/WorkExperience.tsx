@@ -17,11 +17,11 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: "1",
-    company: "Tech Corp Inc.",
-    logo: "🏢",
-    position: "Senior Full Stack Developer",
-    duration: "2022 - Present",
-    techStack: ["React", "Node.js", "TypeScript", "AWS", "MongoDB"],
+    company: "Fiserv India Pvt Ltd",
+    logo: "/resources/icons/fiserv-logo.png",
+    position: "Professional Software Developer",
+    duration: "2024 - Present",
+    techStack: ["Java", "Spring-boot", "PostgreSql", "AWS", "Docker", "Kubernetes"],
     description: [
       "Led development of microservices architecture serving 1M+ users",
       "Reduced application load time by 40% through optimization",
@@ -30,15 +30,31 @@ const experiences: Experience[] = [
   },
   {
     id: "2",
-    company: "StartupXYZ",
-    logo: "🚀",
-    position: "Frontend Developer",
-    duration: "2020 - 2022",
-    techStack: ["React", "Redux", "JavaScript", "Sass", "Firebase"],
+    company: "Fiserv India Pvt Ltd",
+    logo: "/resources/icons/fiserv-logo.png",
+    position: "Backend Developer Associate",
+    duration: "2023 - 2024",
+    techStack: ["Java", "Spring", "Mysql", "PostgreSql", "Aws"],
     description: [
-      "Built responsive web applications from scratch",
-      "Collaborated with UX team to implement pixel-perfect designs",
-      "Integrated third-party APIs and payment systems"
+      "Built rest api web applications from scratch",
+      "Collaborated with UI/UX team to implement seamless integrations",
+      "Integrated third-party APIs and downstream systems"
+    ]
+  },
+  {
+    id: "3",
+    company: "Fiserv India Pvt Ltd",
+    logo: "/resources/icons/fiserv-logo.png",
+    position: "Test Automation Analyst",
+    duration: "2022 - 2023",
+    techStack: ["Java", "Selenium", "JUnit", "REST", "AWS", "Cucumber", "Jenkins"],
+    description: [
+      "Designed and implemented automated test frameworks using Selenium WebDriver and JUnit/Cucumber",
+      "Developed and maintained automated UI and API test suites, improving regression coverage and reducing manual test effort",
+      "Integrated automated tests into CI pipelines (Jenkins) to enable reliable, fast feedback on commits and pull requests",
+      "Created reusable test utilities, data-driven tests, and clear reporting (Allure/ExtentReports) for easier triage",
+      "Collaborated with developers and product teams to reproduce, prioritize, and resolve defects; tracked issues via JIRA",
+      "Mentored QA teammates on automation best practices and helped define overall QA strategy"
     ]
   }
 ];
@@ -68,7 +84,19 @@ const WorkExperience = () => {
             <Card key={exp.id} className="glass-card animate-fade-in" style={{animationDelay: `${index * 0.2}s`}}>
               <CardHeader>
                 <div className="flex items-start gap-4">
-                  <div className="text-4xl">{exp.logo}</div>
+                  <div className="w-[80px] h-[80px] flex-shrink-0 rounded-md overflow-hidden bg-muted flex items-center justify-center">
+                    {/(^\/|^http|^data:)/.test(exp.logo) ? (
+                      <img
+                        src={exp.logo}
+                        alt={`${exp.company} logo`}
+                        className="w-full h-full object-cover"
+                        width={80}
+                        height={80}
+                      />
+                    ) : (
+                      <span className="text-4xl">{exp.logo}</span>
+                    )}
+                  </div>
                   <div className="flex-1">
                     <CardTitle className="text-2xl text-primary mb-2">{exp.company}</CardTitle>
                     <h3 className="text-xl font-semibold mb-2">{exp.position}</h3>

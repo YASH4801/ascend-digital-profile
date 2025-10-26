@@ -14,60 +14,60 @@ interface Project {
 }
 
 const projects: Project[] = [
+//   {
+//     id: "1",
+//     title: "E-Commerce Platform",
+//     description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration",
+//     icon: "🛒",
+//     sourceUrl: "https://github.com/user/ecommerce",
+//     liveUrl: "https://ecommerce-demo.com",
+//     techStack: ["React", "Node.js", "MongoDB", "Stripe"]
+//   },
+//   {
+//     id: "2",
+//     title: "Task Management App",
+//     description: "Collaborative task management with real-time updates and team features",
+//     icon: "📋",
+//     sourceUrl: "https://github.com/user/taskmanager",
+//     liveUrl: "https://taskmanager-demo.com",
+//     techStack: ["React", "Firebase", "Material-UI"]
+//   },
+//   {
+//     id: "3",
+//     title: "Weather Dashboard",
+//     description: "Beautiful weather dashboard with location-based forecasts",
+//     icon: "🌤️",
+//     sourceUrl: "https://github.com/user/weather",
+//     liveUrl: "https://weather-demo.com",
+//     techStack: ["Vue.js", "OpenWeather API", "Chart.js"]
+//   },
+//   {
+//     id: "4",
+//     title: "Social Media App",
+//     description: "Instagram-like social media platform with photo sharing",
+//     icon: "📱",
+//     sourceUrl: "https://github.com/user/social",
+//     liveUrl: "https://social-demo.com",
+//     techStack: ["React Native", "Express", "PostgreSQL"]
+//   },
   {
     id: "1",
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration",
-    icon: "🛒",
-    sourceUrl: "https://github.com/user/ecommerce",
-    liveUrl: "https://ecommerce-demo.com",
-    techStack: ["React", "Node.js", "MongoDB", "Stripe"]
-  },
-  {
-    id: "2",
-    title: "Task Management App",
-    description: "Collaborative task management with real-time updates and team features",
-    icon: "📋",
-    sourceUrl: "https://github.com/user/taskmanager",
-    liveUrl: "https://taskmanager-demo.com",
-    techStack: ["React", "Firebase", "Material-UI"]
-  },
-  {
-    id: "3",
-    title: "Weather Dashboard",
-    description: "Beautiful weather dashboard with location-based forecasts",
-    icon: "🌤️",
-    sourceUrl: "https://github.com/user/weather",
-    liveUrl: "https://weather-demo.com",
-    techStack: ["Vue.js", "OpenWeather API", "Chart.js"]
-  },
-  {
-    id: "4",
-    title: "Social Media App",
-    description: "Instagram-like social media platform with photo sharing",
-    icon: "📱",
-    sourceUrl: "https://github.com/user/social",
-    liveUrl: "https://social-demo.com",
-    techStack: ["React Native", "Express", "PostgreSQL"]
-  },
-  {
-    id: "5",
     title: "Portfolio Website",
     description: "Responsive portfolio website with modern design and animations",
-    icon: "🎨",
-    sourceUrl: "https://github.com/user/portfolio",
-    liveUrl: "https://portfolio-demo.com",
-    techStack: ["Next.js", "Tailwind CSS", "Framer Motion"]
+    icon: "💼",
+    sourceUrl: "https://github.com/YASH4801/ascend-digital-profile",
+    liveUrl: "https://personal-profile-yash-narang.netlify.app/",
+    techStack: ["TypeScript", "Tailwind CSS", "React", "Vite"]
   },
-  {
-    id: "6",
-    title: "Crypto Tracker",
-    description: "Real-time cryptocurrency price tracker with portfolio management",
-    icon: "₿",
-    sourceUrl: "https://github.com/user/crypto",
-    liveUrl: "https://crypto-demo.com",
-    techStack: ["React", "CoinGecko API", "Redux"]
-  }
+  // {
+  //   id: "6",
+  //   title: "Crypto Tracker",
+  //   description: "Real-time cryptocurrency price tracker with portfolio management",
+  //   icon: "₿",
+  //   sourceUrl: "https://github.com/user/crypto",
+  //   liveUrl: "https://crypto-demo.com",
+  //   techStack: ["React", "CoinGecko API", "Redux"]
+  // }
 ];
 
 const Projects = () => {
