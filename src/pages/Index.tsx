@@ -222,23 +222,23 @@ const Index = () => {
       {/* Quick Stats */}
       <section className="py-16 px-4 bg-muted/20">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
             <div className="animate-fade-in">
-              <div className="text-3xl font-bold gradient-text mb-2">5+</div>
+              <div className="text-3xl font-bold gradient-text mb-2">3+</div>
               <div className="text-muted-foreground">Years Experience</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              <div className="text-3xl font-bold gradient-text mb-2">50+</div>
+              <div className="text-3xl font-bold gradient-text mb-2">20+</div>
               <div className="text-muted-foreground">Projects Completed</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <div className="text-3xl font-bold gradient-text mb-2">15+</div>
+              <div className="text-3xl font-bold gradient-text mb-2">10+</div>
               <div className="text-muted-foreground">Technologies</div>
             </div>
-            <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            {/* <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <div className="text-3xl font-bold gradient-text mb-2">98%</div>
               <div className="text-muted-foreground">Client Satisfaction</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

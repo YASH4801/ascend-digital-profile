@@ -19,30 +19,30 @@ const skillCategories: SkillCategory[] = [
     title: "Programming Languages",
     icon: Code,
     skills: [
-      { name: "JavaScript/TypeScript", level: 90 },
       { name: "Java", level: 85 },
-      { name: "Python", level: 80 },
-      { name: "Go", level: 70 },
-      { name: "C++", level: 75 }
+      { name: "JavaScript/TypeScript", level: 60 },
+      { name: "Python", level: 75 },
+      { name: "C++", level: 70 }
     ]
   },
   {
     title: "Frameworks & Tools",
     icon: Wrench,
     skills: [
-      { name: "React.js", level: 95 },
-      { name: "Node.js", level: 88 },
-      { name: "Spring Boot", level: 85 },
-      { name: "Docker", level: 80 },
-      { name: "AWS", level: 82 },
-      { name: "MongoDB", level: 78 }
+      { name: "Spring Boot", level: 90 },
+      { name: "PostgreSql", level: 90 },
+      { name: "MySql", level: 90 },
+      { name: "React.js", level: 20 },
+      { name: "Docker", level: 70 },
+      { name: "AWS", level: 70 },
+      { name: "MongoDB", level: 70 }
     ]
   },
   {
     title: "Soft Skills",
     icon: Users,
     skills: [
-      { name: "Team Leadership", level: 88 },
+      { name: "Team Leadership", level: 90 },
       { name: "Communication", level: 92 },
       { name: "Problem Solving", level: 90 },
       { name: "Project Management", level: 85 },
