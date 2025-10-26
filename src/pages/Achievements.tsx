@@ -1,4 +1,4 @@
-import { ArrowLeft, Trophy, Award, Medal, Star, Target } from "lucide-react";
+import { LucideIcon, ArrowLeft, Trophy, Award, Medal, Star, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -9,58 +9,58 @@ interface Achievement {
   description: string;
   date: string;
   category: "award" | "certification" | "recognition" | "milestone";
-  icon: any;
+  icon: LucideIcon;
 }
 
 const achievements: Achievement[] = [
   {
     id: "1",
-    title: "Employee of the Year 2023",
-    description: "Recognized for outstanding contributions to product development and team leadership",
-    date: "December 2023",
-    category: "award",
-    icon: Trophy
-  },
-  {
-    id: "2",
-    title: "AWS Solutions Architect",
-    description: "Achieved Professional level certification in AWS cloud architecture",
-    date: "August 2023",
+    title: "OCI 2025 Certified AI Foundations Associate",
+    description: "Successfully passed the OCI 2025 Certified AI Foundations Associate exam with 95% score",
+    date: "October 2025",
     category: "certification",
     icon: Award
   },
   {
-    id: "3",
-    title: "Open Source Contributor",
-    description: "Top 100 contributor to React ecosystem with 500+ GitHub stars",
-    date: "Ongoing",
-    category: "recognition",
-    icon: Star
-  },
-  {
-    id: "4",
-    title: "Project Lead Success",
-    description: "Successfully delivered 5 major projects on time and under budget",
-    date: "2022-2023",
-    category: "milestone",
-    icon: Target
-  },
-  {
-    id: "5",
-    title: "Innovation Award",
-    description: "Created an internal tool that improved team productivity by 30%",
-    date: "June 2022",
+    id: "2",
+    title: "Living Proof Level 2 Recognition",
+    description: "Recognized for outstanding contributions to client Success, achieving Level 2 status 7th time",
+    date: "September 2025",
     category: "award",
     icon: Medal
   },
-  {
-    id: "6",
-    title: "Technical Excellence",
-    description: "Achieved 99.9% uptime for critical production systems",
-    date: "2022",
-    category: "milestone",
-    icon: Target
-  }
+  // {
+  //   id: "3",
+  //   title: "Open Source Contributor",
+  //   description: "Top 100 contributor to React ecosystem with 500+ GitHub stars",
+  //   date: "Ongoing",
+  //   category: "recognition",
+  //   icon: Star
+  // },
+  // {
+  //   id: "4",
+  //   title: "Project Lead Success",
+  //   description: "Successfully delivered 5 major projects on time and under budget",
+  //   date: "2022-2023",
+  //   category: "milestone",
+  //   icon: Target
+  // },
+  // {
+  //   id: "5",
+  //   title: "Innovation Award",
+  //   description: "Created an internal tool that improved team productivity by 30%",
+  //   date: "June 2022",
+  //   category: "award",
+  //   icon: Medal
+  // },
+  // {
+  //   id: "6",
+  //   title: "Technical Excellence",
+  //   description: "Achieved 99.9% uptime for critical production systems",
+  //   date: "2022",
+  //   category: "milestone",
+  //   icon: Target
+  // }
 ];
 
 const categoryColors = {
