@@ -32,7 +32,7 @@ const skillCategories: SkillCategory[] = [
       { name: "Spring Boot", level: 90 },
       { name: "PostgreSql", level: 90 },
       { name: "MySql", level: 90 },
-      { name: "React.js", level: 20 },
+      { name: "React.js", level: 65 },
       { name: "Docker", level: 70 },
       { name: "AWS", level: 70 },
       { name: "MongoDB", level: 70 }

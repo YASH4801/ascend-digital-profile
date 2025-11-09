@@ -29,22 +29,22 @@ const achievements: Achievement[] = [
     category: "award",
     icon: Medal
   },
-  // {
-  //   id: "3",
-  //   title: "Open Source Contributor",
-  //   description: "Top 100 contributor to React ecosystem with 500+ GitHub stars",
-  //   date: "Ongoing",
-  //   category: "recognition",
-  //   icon: Star
-  // },
-  // {
-  //   id: "4",
-  //   title: "Project Lead Success",
-  //   description: "Successfully delivered 5 major projects on time and under budget",
-  //   date: "2022-2023",
-  //   category: "milestone",
-  //   icon: Target
-  // },
+  {
+    id: "3",
+    title: "Oracle APEX Cloud Developer Certified Professional",
+    description: "Successfully passed the Oracle APEX Cloud Developer Certified Professional exam with 88% score",
+    date: "October 2025",
+    category: "certification",
+    icon: Award
+  },
+  {
+    id: "4",
+    title: "Completed level 2 in Oracle Race 2 Certification 2025",
+    description: "Successfully completed 2 Certification Exams in the programme with full proficiency",
+    date: "November 2025",
+    category: "award",
+    icon: Medal
+  }
   // {
   //   id: "5",
   //   title: "Innovation Award",
