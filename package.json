@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --outDir .build",
     "build:dev": "vite build --mode development",
+    "local:run": "powershell -ExecutionPolicy Bypass -File ./run-local.ps1 -Port 8080",
     "lint": "eslint .",
     "preview": "vite preview"
   },
